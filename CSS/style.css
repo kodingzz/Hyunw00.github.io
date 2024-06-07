@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    text-decoration: none;
+    
+}
+
+/* header 부분 */
+#top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkblue;
+   
+    padding: 5px;
+}
+
+#logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+#logo a img{
+  
+}
+#link ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+#link ul li{
+    margin-right: 20px;
+}
