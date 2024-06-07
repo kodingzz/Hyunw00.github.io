@@ -48,8 +48,22 @@ button:focus{
     outline: 1px solid var(--color-accent);
 }
 
-
-
+/* Common styling */
+ /*section마다 공통된 특징들을 가진다면 각 section마다 특징을 반복해서 부여하기 보다 */
+ /* class로 정의해놓고 각 section에 넣어주는게 간편하다.  */ 
+.section{
+    padding: 4rem;
+    text-align: center;
+}
+ /*마찬가지로 section마다 있는 h2,p태그도 공통된 특징을 가지므로 클래스로 정의 */
+.title{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+.description{
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
 
 
 /* header 부분 */
@@ -108,8 +122,7 @@ button:focus{
     align-items: center;
     background-color:var(--color-primary);
     color: var(--color-text);
-    padding: 5rem 1rem;
-    padding-top: 7rem;
+   
 }
 
 .home__img{
@@ -120,24 +133,25 @@ button:focus{
     border-radius: 100%;
 }
 .home__info{
-    text-align: center;
     margin-top: 10px;
 }
-.home__info__title{
+/* .home__info__title{
     font-size: 30px;
-}
-.home__info__title strong{
+} */
+.title strong{
     color: var(--color-accent);
 }
-.home__info__introduce{
+/* .home__info__description{
     margin-top: 5px;
     margin-bottom: 20px;
-}
+} */
 .home__info__btn{
     color: var(--color-black);
     background-color: var(--color-accent);
     padding: 5px;
     border-radius: 3px;
+    display: inline-block;
+    margin-top: 10px;
     font-size: 12px;
     font-weight: bold;
 }
@@ -146,3 +160,23 @@ button:focus{
     color: var(--color-text);
     border: 1px solid var(--color-accent);
 }
+
+/* about 부분 */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+  
+}
+
+.about__info{
+    text-align: center;
+    width: 60%;
+}
+/* .about__info__title{
+    margin-bottom: 12px;
+} */

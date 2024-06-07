@@ -54,35 +54,38 @@
 
     <main>
         <!-- home 부분 -->
-        <section id="home">
+        <section id="home" class="section">
             <img src="/images/profile.png" alt="내 사진" class="home__img">
             <div class="home__info">
-                <h2 class="home__info__title">Hello</br>I&#39;m <strong>Coder who loves fitness</strong>, HYUNOO</h2>
-                <p class="home__info__introduce">A Software developer job seeker </p>
+             <!-- h2,p는 section마다 공통된 특징들을 가지므로 공통된 속성을 가진 클래스 사용 -->
+                <h2 class="title">Hello</br>I&#39;m <strong>Coder who loves fitness</strong>, HYUNOO</h2>
+                <p class="description">A Software developer job seeker </p>
                 <a href="#contact" class="home__info__btn">Contact Me</a>
             </div>
         </section>
-        <section id="about">
-            <div>
-                <h2>About me</h2>
-                <p>I graduated from a 4-year university and received A+ in both of my graduation works. I served in the military and am currently studying on my own to prepare for employment. I plan to study further and attend a good boot camp in the future to focus on job preparation.</p>
+
+        <!-- about 부분 -->
+        <section id="about" class="section">
+            <div class="about__info">
+                <h2 class="title">About me</h2>
+                <p class="description">I graduated from a 4-year university and received A+ in both of my graduation works. I served in the military and am currently studying on my own to prepare for employment. I plan to study further and attend a good boot camp in the future to focus on job preparation.</p>
             </div>
-            <div>
-                <ul>
-                    <li>
-                        <i class="fa-brands fa-html5"></i>
-                        <p>HTML</p>
-                        <p>HTML</p>
+            <div class="about__learn">
+                <ul class="about__learn__menu">
+                    <li class="about__learn__item">
+                        <i class="fa-brands fa-html5" class="about__learn__item__icon"></i>
+                        <h3 class="about__learn__item__title">HTML</h3>
+                        <p class="about__learn__item__content">HTML5</p>
                     </li>
-                    <li>
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <p>CSS</p>
-                        <p>CSS</p> 
+                    <li class="about__learn__item">
+                        <i class="fa-brands fa-css3-alt"  class="about__learn__item__icon"></i>
+                        <h3 class="about__learn__item__title">CSS</h3>
+                        <p class="about__learn__item__content">CSS3</p> 
                     </li>
-                    <li>
-                        <i class="fa-brands fa-js"></i>
-                        <p>JAVASCRIPT</p>
-                        <p>JAVASCRIPT</p>
+                    <li class="about__learn__item">
+                        <i class="fa-brands fa-js"  class="about__learn__item__icon"></i>
+                        <h3 class="about__learn__item__title">JAVASCRIPT</h3>
+                        <p class="about__learn__item__content">ES6</p>
                     </li>
                 </ul>
             </div>
@@ -108,10 +111,10 @@
             </div>
         </section>
 
-        <section id="skills">
+        <section id="skills" class="section">
             <div>
-                <h2>My Skills</h2>
-                <p>Skills&Attribues</p>
+                <h2 class="title">My Skills</h2>
+                <p class="description">Skills&Attribues</p>
                 <p>My skills are currently honed in HTML, CSS, and JAVASCRIPT to become a front-end developer, and I plan to study React, typescript, and nodejs in the future.</p>
             </div>
             <div>
@@ -164,10 +167,11 @@
             </div>
 
         </section>
-        <section id="mywork">
+
+        <section id="mywork" class="section">
             <div>
-                <h2>My work</h2>
-                <p>Projects</p>
+                <h2 class="title">My work</h2>
+                <p class="description">Projects</p>
                 <ul>
                     <li><button>All <span>8</span></button></li>
                     <li><button>Front-end</button></li>
@@ -253,10 +257,10 @@
             </div>
         </section>
 
-        <section id="testimonial">
+        <section id="testimonial" class="section">
             <div>
-                <h2>Testimonials</h2>
-                <p>See what They say about me</p>
+                <h2 class="title">Testimonials</h2>
+                <p class="description">See what They say about me</p>
             </div>
             <div>
                 <ul>
@@ -290,10 +294,10 @@
           <!-- a태그안에 의미있는 정보(읽을 수 있는 컨텐츠)가 없을 때 웹 접근성 향상을 위해 title값을 주어 의미를 부여해 주는것이 좋다.-->
         </aside>
     </main>
-    <footer id="contact">
+    <footer id="contact" class="section">
         <div>
-            <h2>Let&#39;s talk</h2>
-             <p>khwland090@gmail.com</p> 
+            <h2 class="title">Let&#39;s talk</h2>
+             <p class="description">khwland090@gmail.com</p> 
         </div>
 
         <div>
