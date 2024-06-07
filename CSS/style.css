@@ -12,7 +12,11 @@
     --color-blue:#03e8f9;
     --color-orange:#fd6413;
     --color-gray:#1b1e26;
+
+    /* max-width */
+    --max-width :1200px;
 }
+
 
 *{
     box-sizing: border-box;
@@ -65,6 +69,11 @@ button:focus{
     margin: 0.5rem 0;
 }
 
+.max-container{
+    max-width: var(--max-width);
+    /* block형태를 중앙정렬 해주는 방법 */
+    margin: auto; 
+}
 
 /* header 부분 */
 .header{
@@ -236,4 +245,69 @@ button:focus{
     font-size: 0.8rem;
     color: var(--color-primary);
 
+}
+/* skills */
+#skills{
+    background-color:var(--color-primary-variant);
+    color: var(--color-text);
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+
+    /* grid-template-areas:
+    'c t'
+    'c e'; */
+    margin: 2rem 10rem;
+    border-radius: 10px;
+    /* 해당 box를 넘어간 자식들은 가려준다. */
+    /* border을 나간 자식 요소의 일부를 가려준다 */ 
+    overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+}
+
+.skills__coding{
+    grid-row: span 2;
+    padding:1.5rem 1rem;
+    background-color: var(--color-primary);
+}
+.skills__title{
+    color: var(--color-accent);
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+}
+.skills__menu{
+    font-size: 0.8rem;
+}
+
+.skills__item{
+    margin-bottom: 1.5rem;
+}
+
+.skills__item__per{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.skills__item__bar{
+    border: 2px solid var(--color-accent);
+}
+
+
+
+.skills__tools{
+    /* grid-area:t; */
+    padding:1.5rem 1rem;
+   
+}
+
+
+.skills__etc{
+    /* grid-area: e; */
+    padding:1.5rem 1rem;
+    background-color: var(--color-primary);
+    /*  같은 색이라도 다르게 표현 */
+    filter: brightness(150%);
 }

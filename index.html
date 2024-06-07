@@ -54,7 +54,7 @@
 
     <main>
         <!-- home 부분 -->
-        <section id="home" class="section">
+        <section id="home" class="section ">
             <img src="/images/profile.png" alt="내 사진" class="home__img">
             <div class="home__info">
              <!-- h2,p는 section마다 공통된 특징들을 가지므로 공통된 속성을 가진 클래스 사용 -->
@@ -65,7 +65,7 @@
         </section>
 
         <!-- about 부분 -->
-        <section id="about" class="section">
+        <section id="about" class="section max-container">
             <div class="about__info">
                 <h2 class="title">About me</h2>
                 <p class="description">I graduated from a 4-year university and received A+ in both of my graduation works. I served in the military and am currently studying on my own to prepare for employment. I plan to study further and attend a good boot camp in the future to focus on job preparation.</p>
@@ -112,63 +112,97 @@
         
         </section>
 
-        <section id="skills" class="section">
-            <div>
+
+        <!-- skills -->
+        <section id="skills" class="section ">
+            <div class="max-container">
                 <h2 class="title">My Skills</h2>
                 <p class="description">Skills&Attribues</p>
-                <p>My skills are currently honed in HTML, CSS, and JAVASCRIPT to become a front-end developer, and I plan to study React, typescript, and nodejs in the future.</p>
-            </div>
-            <div>
-                <section>
-                    <h3>Coding Skills</h3>
-                    <ul>
-                     <li>
-                        <div><span>HTML</span><span>95%</span></div>
-                        <div><div style="width: 95%"></div></div>
-                    </li>
-                    <li>
-                        <div><span>CSS</span><span>85%</span></div>
-                        <div><div style="width: 85%"></div></div>
-                    </li>
-                    <li>
-                        <div><span>Javascript</span><span>50%</span></div>
-                        <div><div style="width: 50%"></div></div>
-                    </li>
-                    <li>
-                        <div><span>React</span><span>0%</span></div>
-                        <div><div style="width: 0%"></div></div>
-                    </li>
-                    <li>
-                        <div><span>Typescript</span><span>0%</span></div>
-                        <div><div style="width: 0%"></div></div>
-                    </li>
-                    <li>
-                        <div><span>Nodejs</span><span>0%</span></div>
-                        <div><div style="width: 0%"></div></div>
-                    </li>
-                    </ul>
+                <p >My skills are currently honed in HTML, CSS, and JAVASCRIPT to become a front-end developer, and I plan to study React, typescript, and nodejs in the future.</p>
+    
+             
+                <div class="skills">
+                    <section class="skills__coding">
+                        <h3 class="skills__title">Coding Skills</h3>
+                        <ul class="skills__menu">
+                         <li class="skills__item">
+                            <div class="skills__item__per">
+                                <span>HTML</span>
+                                <span>95%</span>
+                            </div>
+                          
+                            <div class="skills__item__bar"  style="width: 95%"></div>
+                       
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item__per">
+                                <span>CSS</span>
+                                <span>85%</span>
+                            </div>
+                          
+                            <div class="skills__item__bar"  style="width: 85%"></div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item__per">
+                                <span>Javascript</span>
+                                <span>55%</span>
+                            </div>
+                          
+                            <div class="skills__item__bar"  style="width: 55%"></div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item__per">
+                                <span>React</span>
+                                <span>0%</span>
+                            </div>
+                          
+                            <div class="skills__item__bar"  style="width: 0%"></div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item__per">
+                                <span>Typescript</span>
+                                <span>0%</span>
+                            </div>
+                          
+                            <div class="skills__item__bar"  style="width: 0%"></div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item__per">
+                                <span>Nodejs</span>
+                                <span>0%</span>
+                            </div>
+                          
+                            <div class="skills__item__bar"  style="width: 0%"></div>
+                        </li>
+                        </ul>
+    
                 </section>
-                <section>
-                    <h3>Tools</h3>
-                    <ul>
-                        <li>Visual Studio Code</li>
-                        <li>Android Strdio Code</li>
-                        <li>...</li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Etc</h3>
-                    <ul>
-                        <li>Git</li>
-                        <li>Scrum master</li>
-                        <li>Math</li>
-                    </ul>
-                </section>
+    
+                    <section class="skills__tools">
+                        <h3 class="skills__title">Tools</h3>
+                        <ul class="skills__menu">
+                            <li>Visual Studio Code</li>
+                            <li>Android Strdio Code</li>
+                            <li>...</li>
+                        </ul>
+                    </section>
+    
+                    <section class="skills__etc">
+                        <h3 class="skills__title">Etc</h3>
+                        <ul class="skills__menu">
+                            <li>Git</li>
+                            <li>Scrum master</li>
+                            <li>Math</li>
+                        </ul>
+                    </section>
+                </div>
             </div>
-            </div>
+            
+            
 
         </section>
 
+        <!-- work -->
         <section id="mywork" class="section">
             <div>
                 <h2 class="title">My work</h2>
