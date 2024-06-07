@@ -1,4 +1,12 @@
 :root{
+     /* App colors */
+    --color-primary :var(--color-black);
+    --color-primary-variant: var(--color-gray);
+    --color-accent: var(--color-blue);
+    --color-accent-variant:var(--color-orange);
+    --color-text: var(--color-white);
+
+    /* colors */
     --color-white:#ffffff;
     --color-black:#050a13;
     --color-blue:#03e8f9;
@@ -8,6 +16,7 @@
 
 *{
     box-sizing: border-box;
+    margin: 0;
 }
 
 body{
@@ -25,7 +34,7 @@ ul{
 }
 a{
     text-decoration: none;
-    color: var(--color-white);
+    color: var(--color-text);
     cursor: pointer;
 }
 button{
@@ -36,7 +45,7 @@ button{
 }
 
 button:focus{
-    outline: 1px solid var(--color-blue);
+    outline: 1px solid var(--color-accent);
 }
 
 
@@ -44,32 +53,96 @@ button:focus{
 
 
 /* header 부분 */
-#top-header{
+.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: darkblue;
-   
     padding: 5px;
+    background-color: var(--color-black);
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-#logo a{
+.header__logo__a{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 10px;
+    /* flex item간에 gap주기 */
+    gap: 5px;
 }
-
-#logo a img{
+.header__logo__title{
+    font-size: 1.2rem;
+    margin-top:5px;
+}
+.header__logo__img{
   
 }
-#link ul{
+.header__menu{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 12px;
+    gap: 4px;  
+    
 }
 
-#link ul li{
-    margin-right: 20px;
+.header__menu__item{
+   padding: 8px 12px;
+}
+.header__menu__item:hover{
+    border-bottom: 1px solid var(--color-accent);
+}
+
+.header__menu__item:active{
+    border: 1px solid var(--color-accent);
+    border-radius: 10px;
+}
+
+
+/* home 부분 */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--color-primary);
+    color: var(--color-text);
+    padding: 5rem 1rem;
+    padding-top: 7rem;
+}
+
+.home__img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid var(--color-accent);
+    border-radius: 100%;
+}
+.home__info{
+    text-align: center;
+    margin-top: 10px;
+}
+.home__info__title{
+    font-size: 30px;
+}
+.home__info__title strong{
+    color: var(--color-accent);
+}
+.home__info__introduce{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.home__info__btn{
+    color: var(--color-black);
+    background-color: var(--color-accent);
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.home__info__btn:hover{
+    background-color: transparent;
+    color: var(--color-text);
+    border: 1px solid var(--color-accent);
 }

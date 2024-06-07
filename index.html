@@ -31,34 +31,35 @@
 </head>
 
 <body>
-    <header id="top-header">
-        <div id="logo">
-            <a href="#" >
-                    <img src="/images/favicon.ico" alt="내 사진" width="30px" height="30px">
-                    <h1>HYUNOO</h1> 
+    <!-- header 부분 -->
+    <header class="header">
+        <div class="header__logo">
+            <a href="#" class="header__logo__a">
+                    <img class="header__logo__img" src="/images/favicon.ico" alt="내 사진" width="30px" height="30px">
+                    <h1 class="header__logo__title">HYUNOO</h1> 
             </a>
         </div>
-        <nav id="link">
-            <ul>
-                <li><a href="#home">Home</a></li>  <!--id가 home인곳으로 이동 anchor 태그는 단순히 웹사이트를 연결하는 것 뿐 아니라 같은 페이지의 요소로도 이동한다.-->
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#mywork">My work</a></li>
-                <li><a href="#testimonial">Testimonial</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <nav>
+            <ul class="header__menu">
+                <li><a class="header__menu__item" href="#home">Home</a></li>  <!--id가 home인곳으로 이동 anchor 태그는 단순히 웹사이트를 연결하는 것 뿐 아니라 같은 페이지의 요소로도 이동한다.-->
+                <li><a class="header__menu__item" href="#about">About</a></li>
+                <li><a class="header__menu__item" href="#skills">Skills</a></li>
+                <li><a class="header__menu__item" href="#mywork">My work</a></li>
+                <li><a class="header__menu__item" href="#testimonial">Testimonial</a></li>
+                <li><a class="header__menu__item" href="#contact">Contact</a></li>
             </ul>
-          
+          <!-- 꿀팁) 코드 다중 선택 alt+shift하고 선택하기 -->
         </nav>
     </header>
 
     <main>
+        <!-- home 부분 -->
         <section id="home">
-             <img src="/images/profile.png" alt="내 사진">
-            <div>
-                <h2>Hello</h2>
-                <h2>I&#39;m <strong>Coder who loves fitness</strong>,HYUNOO</h2>
-                <p>A Software developer job seeker </p>
-                <a href="#contact">Contact me</a>
+            <img src="/images/profile.png" alt="내 사진" class="home__img">
+            <div class="home__info">
+                <h2 class="home__info__title">Hello</br>I&#39;m <strong>Coder who loves fitness</strong>, HYUNOO</h2>
+                <p class="home__info__introduce">A Software developer job seeker </p>
+                <a href="#contact" class="home__info__btn">Contact Me</a>
             </div>
         </section>
         <section id="about">
@@ -289,7 +290,7 @@
           <!-- a태그안에 의미있는 정보(읽을 수 있는 컨텐츠)가 없을 때 웹 접근성 향상을 위해 title값을 주어 의미를 부여해 주는것이 좋다.-->
         </aside>
     </main>
-    <footer>
+    <footer id="contact">
         <div>
             <h2>Let&#39;s talk</h2>
              <p>khwland090@gmail.com</p> 
