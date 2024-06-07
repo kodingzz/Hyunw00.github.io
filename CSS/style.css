@@ -175,8 +175,65 @@ button:focus{
 
 .about__info{
     text-align: center;
-    width: 60%;
+    width: 70%;
 }
 /* .about__info__title{
     margin-bottom: 12px;
 } */
+
+.about__majors{
+    display: flex;
+    justify-content:center;
+    gap: 10px;
+    color: var(--color-text);
+    margin: 2.5rem;
+}
+.about__major{
+    width:25%;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    background-color: var(--color-primary-variant);
+    /* box에 그림자를 주는 방법 x,y offset과 그림자 굵기,  */
+    box-shadow: 3px 3px 3px var(--color-gray);
+}
+
+.about__major__icon{
+  color: var(--color-accent);
+  font-size: 3rem;
+    transition: transform 0.5s ease;
+}
+
+.about__major:hover .about__major__icon{
+    transform: rotate(45deg) scale(1.2);
+    color: var(--color-orange);
+}
+.about__major__title{
+    margin: 10px 0;
+    font-size: 1.3rem;
+}
+
+.about__careers{
+    width: 70%;
+   text-align: start;
+   
+}
+.about__career{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 10px;
+   
+}
+
+.about__career__img{
+    width: 30px;
+}
+.about__career__name{  
+    color: var(--color-primary);
+}
+.about__career__period{
+    font-size: 0.8rem;
+    color: var(--color-primary);
+
+}
