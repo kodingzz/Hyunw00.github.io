@@ -39,7 +39,7 @@
                     <h1 class="header__logo__title">HYUNOO</h1> 
             </a>
         </div>
-        <nav>
+        <nav class="header__nav">
             <ul class="header__menu">
                 <li><a class="header__menu__item" href="#home">Home</a></li>  <!--id가 home인곳으로 이동 anchor 태그는 단순히 웹사이트를 연결하는 것 뿐 아니라 같은 페이지의 요소로도 이동한다.-->
                 <li><a class="header__menu__item" href="#about">About</a></li>
@@ -49,7 +49,13 @@
                 <li><a class="header__menu__item" href="#contact">Contact</a></li>
             </ul>
           <!-- 꿀팁) 코드 다중 선택 alt+shift하고 선택하기 -->
+
+          <a href="#" class="header__bar hidden">
+            <i class="fa-solid fa-bars "></i>
+        </a>
         </nav>
+       
+        
     </header>
 
     <main>
@@ -71,7 +77,7 @@
                 <p class="description">I graduated from a 4-year university and received A+ in both of my graduation works. I served in the military and am currently studying on my own to prepare for employment. I plan to study further and attend a good boot camp in the future to focus on job preparation.</p>
             </div>
 
-            <div>
+         
                 <ul class="about__majors">
                     <li class="about__major">
                         <i class="fa-brands fa-html5 about__major__icon"></i>
@@ -89,7 +95,7 @@
                         <p class="about__major__content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, dignissimos!</p>
                     </li>
                 </ul>
-            </div>
+      
 
            
                 <ul class="about__careers">
@@ -328,32 +334,39 @@
                 </ul>
         </section>
       
-        <aside>
-          <a href="#home" title="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
-          <!-- a태그안에 의미있는 정보(읽을 수 있는 컨텐츠)가 없을 때 웹 접근성 향상을 위해 title값을 주어 의미를 부여해 주는것이 좋다.-->
+        <!-- arrow up -->
+        <aside >
+<!-- a태그안에 의미있는 정보(읽을 수 있는 컨텐츠)가 없을 때 웹 접근성 향상을 위해 title값을 주어 의미를 부여해 주는것이 좋다.-->
+          <a href="#home" title="back-to-top" class="arrowup">
+            <i class="fa-solid fa-arrow-up arrowup__icon"></i>
+        </a>
+         
         </aside>
     </main>
-    <footer id="contact" class="section">
-        <div>
-            <h2 class="title">Let&#39;s talk</h2>
-             <p class="description">khwland090@gmail.com</p> 
-        </div>
 
-        <div>
-            <ul>
-                <li>
-                    <a href="https://github.com/kodingzz" title="github-link" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"> 
-                        <i class="fa-brands fa-linkedin" title="linkedin-link" target="_blank"></i>
-                    </a>
-                </li>
-            </ul>
-            <p>©Gymrat Coding Hyunwoo- All rights reserved </p>
-        </div>
+    <!-- footer -->
+    <footer id="contact" class="section">
+      <div class="max-container">
+        <h2 class="title">Let&#39;s talk</h2>
+        <p class="description">khwland090@gmail.com</p> 
+
+
+
+    <ul class="contacts">
+           <li >
+               <a href="https://github.com/kodingzz" title="github-link" target="_blank" class="contact">
+                   <i class="fa-brands fa-github contacts__link"></i>
+               </a>
+           </li>
+           <li >
+               <a href="#" title="linkedin-link" target="_blank" class="contact"> 
+                   <i class="fa-brands fa-linkedin contacts__link"></i>
+               </a>
+           </li>
+       </ul>
+       <p class="c">©Gymrat Coding Hyunwoo- All rights reserved </p>
+      </div>
+            
     </footer>
 </body>
 </html>

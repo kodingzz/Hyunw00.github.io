@@ -56,7 +56,7 @@ button:focus{
  /*section마다 공통된 특징들을 가진다면 각 section마다 특징을 반복해서 부여하기 보다 */
  /* class로 정의해놓고 각 section에 넣어주는게 간편하다.  */ 
 .section{
-    padding: 4rem;
+    padding:  4rem;
     text-align: center;
 }
  /*마찬가지로 section마다 있는 h2,p태그도 공통된 특징을 가지므로 클래스로 정의 */
@@ -74,13 +74,16 @@ button:focus{
     /* block형태를 중앙정렬 해주는 방법 */
     margin: auto; 
 }
+.hidden{
+    display: none;
+}
 
 /* header 부분 */
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding:10px 15px;
     background-color: var(--color-black);
     position: fixed;
     top: 0;
@@ -131,6 +134,7 @@ button:focus{
     align-items: center;
     background-color:var(--color-primary);
     color: var(--color-text);
+    
    
 }
 
@@ -222,13 +226,13 @@ button:focus{
 }
 
 .about__careers{
-    width: 70%;
+  
    text-align: start;
    
 }
 .about__career{
     display: flex;
-    justify-content: left;
+    
     align-items: center;
     margin-bottom: 1rem;
     gap: 10px;
@@ -440,4 +444,160 @@ button:focus{
     /* 기본적으론 순차적으로 order:0부터 시작한다. */
     /* img의 order를 1로 설정함으로서 img와 box의 순서가 달라진다. */
     order: 1;
+}
+
+/* arrow up(위로가기) */
+
+.arrowup{
+   
+   background-color: var(--color-primary);
+   position: fixed;
+   bottom: 3rem;
+   right: 3rem;
+   font-size: 2rem;
+   width: 60px;
+   height: 60px;
+   border-radius: 100%;
+   text-align: center;
+    line-height: 60px;
+    box-shadow: var(--color-accent) 0px 20px 30px -10px;
+    animation: upanddown 0.3s infinite ease alternate;
+}
+
+@keyframes upanddown {
+   from{
+    transform: translateY(10px);
+   }
+   to{
+    transform: translateY(-10px);
+   }
+    
+}
+
+
+
+/* footer */
+
+#contact{
+    background-color: var(--color-primary-variant);
+    color: var(--color-text);
+
+}
+
+.contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   padding: 1rem 0;
+}
+
+.contacts__link{
+    transition: all 0.3s ease-in-out;
+}
+.contacts__link:hover{
+    color: var(--color-accent);
+}
+
+.c{
+
+    font-size: 12px;
+}
+
+/* 반응형 웹 */
+@media screen and (max-width:768px) {
+    /* header */
+    .header{
+        flex-direction: column;
+      align-items: start;
+
+    }
+    .header__nav{
+        width: 100%;
+        padding: 0.7rem 0;
+
+    }
+    .header__menu{
+        flex-direction: column;
+        align-items: start;
+    }
+    .header__bar{
+        display: block;
+        color: var(--color-text);
+        cursor: pointer;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 0.7rem;
+        right: 10px;
+    }   
+
+    .section{
+        padding: 3rem 2rem;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .description{
+        font-size: 0.9rem;
+    }
+
+    /* home */
+    #home{
+        padding: 4rem;
+    }
+    /* about */
+    .about__majors{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about__major{
+        width: 80%;
+    }
+
+  .about__career{
+    justify-content: left;
+  }
+
+  /* skills */
+  .skills{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+  }
+  /* work */
+  .mywork__menu{
+    flex-direction: column;
+
+  }
+  .mywork__menu li{
+    width: 100%;
+  }
+  .mywork__item{
+    display: inline-block;
+    width: 85%;
+    margin: auto;
+  }
+  .works{
+    grid-template-columns: repeat(2,1fr);
+
+  }
+  /* testimonial */
+  .testimonial{
+    flex-direction: column;
+  }
+  .testimonial:nth-child(even) .testimonial__img{
+    /* flex로 지정된 부모의 자식 요소들은 각각의 order가 있다. */
+    /* 기본적으론 순차적으로 order:0부터 시작한다. */
+    /* img의 order를 1로 설정함으로서 img와 box의 순서가 달라진다. */
+    order: 0;
+}
+/* aside */
+.arrowup{
+    bottom: 2rem;
+    right: 1rem;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.2rem;
+}
 }
