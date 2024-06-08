@@ -403,3 +403,41 @@ button:focus{
     transform: translateY(-20px);
 }
 
+.testimonials{
+    margin: 3rem;
+    width: 85%;
+}
+.testimonial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 1.5rem 0;
+}
+
+.testimonial__img{
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.testimonial__box{
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.24) 0px 3px 8px;
+
+}
+.testimonial__box__name{
+    color: var(--color-accent);
+    font-size: 14px;
+    font-weight: bold;
+    /* font의 밝기 조절 */
+    filter: brightness(80%);
+}
+
+.testimonial:nth-child(even) .testimonial__img{
+    /* flex로 지정된 부모의 자식 요소들은 각각의 order가 있다. */
+    /* 기본적으론 순차적으로 order:0부터 시작한다. */
+    /* img의 order를 1로 설정함으로서 img와 box의 순서가 달라진다. */
+    order: 1;
+}
