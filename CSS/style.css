@@ -259,7 +259,7 @@ button:focus{
     /* grid-template-areas:
     'c t'
     'c e'; */
-    margin: 2rem 10rem;
+    margin: 2rem 5rem;
     border-radius: 10px;
     /* 해당 box를 넘어간 자식들은 가려준다. */
     /* border을 나간 자식 요소의 일부를 가려준다 */ 
@@ -311,3 +311,95 @@ button:focus{
     /*  같은 색이라도 다르게 표현 */
     filter: brightness(150%);
 }
+
+
+
+/* work */
+
+#mywork{
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+.mywork__menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 2rem;
+    
+}
+.mywork__item{
+     border: 1px solid var(--color-accent);
+     padding: 0.5rem 2.5rem;
+    color: var(--color-text);  
+    font-size: 1rem;  
+    border-radius: 3px;
+    text-align: center;
+    position: relative;
+    white-space: nowrap;
+}
+
+.mywork__item--selected{
+    color: var(--color-primary);
+    background-color: var(--color-accent);
+
+}
+
+.mywork__item__count{
+    opacity: 0;
+    background-color: var(--color-accent-variant);
+    color: var(--color-text);
+
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+   
+    position: absolute;
+    top: -20px;
+    right: 15px;
+    line-height: 25px;
+    transition: all 1s ease;
+}
+
+.mywork__item--selected .mywork__item__count,
+.mywork__item:hover .mywork__item__count{
+    opacity: 1;
+    top: -5px;
+}
+
+
+
+.works{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 1rem;
+    
+}
+.work{
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.work__link__img{
+    width: 100%
+    
+}
+.work__link__contents{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-color: var(--color-black);
+    transition: all 0.5s ease;
+}
+
+.work__link__contents:hover{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
