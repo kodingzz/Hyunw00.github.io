@@ -93,6 +93,11 @@ button:focus{
     transition: all 0.3s ease-in-out;
 }
 
+.header--dark{
+    background-color: var(--color-primary);
+}
+
+
 .header__logo__a{
     display: flex;
     justify-content: center;
@@ -136,11 +141,9 @@ button:focus{
     justify-content: center;
     align-items: center;
     background: rgb(36,0,15);
-    background: linear-gradient(90deg, rgba(36,0,15,1) 0%, rgba(94,62,6,1) 0%, rgba(17,117,12,1) 0%, rgba(7,167,142,1) 21%, rgba(7,170,148,1) 42%, rgba(11,150,97,1) 50%, rgba(0,72,235,1) 72%, rgba(0,212,255,1) 100%, rgba(0,0,0,1) 100%, rgba(17,119,10,1) 100%, rgba(17,117,12,1) 100%, rgba(17,121,9,1) 100%);
+    background: linear-gradient(90deg, rgba(36,0,15,1) 0%, rgba(94,6,21,1) 0%, rgba(117,12,12,1) 0%, rgba(167,114,7,1) 24%, rgba(202,235,0,1) 44%, rgba(7,170,9,1) 66%, rgba(43,11,150,1) 84%, rgba(121,9,120,1) 100%, rgba(27,167,225,1) 100%, rgba(0,212,255,1) 100%, rgba(0,0,0,1) 100%, rgba(17,119,10,1) 100%, rgba(17,117,12,1) 100%, rgba(17,117,12,1) 100%);
 
     color: var(--color-text);
-    
-   
 }
 
 .home__img{
