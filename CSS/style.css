@@ -13,7 +13,7 @@
     --color-orange:#fd6413;
     --color-gray:#1b1e26;
 
-    /* max-width */
+    /* max-width */ 
     --max-width :1200px;
 }
 
@@ -83,11 +83,14 @@ button:focus{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:10px 15px;
-    background-color: var(--color-black);
+    padding:10px;
+    /* background-color: var(--color-black); */
+    background-color: transparent;
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
 }
 
 .header__logo__a{
@@ -108,7 +111,7 @@ button:focus{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    font-size: 14px;
     gap: 4px;  
     
 }
@@ -132,7 +135,9 @@ button:focus{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:var(--color-primary);
+    background: rgb(36,0,15);
+    background: linear-gradient(90deg, rgba(36,0,15,1) 0%, rgba(94,62,6,1) 0%, rgba(17,117,12,1) 0%, rgba(7,167,142,1) 21%, rgba(7,170,148,1) 42%, rgba(11,150,97,1) 50%, rgba(0,72,235,1) 72%, rgba(0,212,255,1) 100%, rgba(0,0,0,1) 100%, rgba(17,119,10,1) 100%, rgba(17,117,12,1) 100%, rgba(17,121,9,1) 100%);
+
     color: var(--color-text);
     
    
@@ -166,12 +171,15 @@ button:focus{
     display: inline-block;
     margin-top: 10px;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: bold; 
+    /* height: 28px;   */
 }
 .home__info__btn:hover{
     background-color: transparent;
     color: var(--color-text);
     border: 1px solid var(--color-accent);
+    /* home__info__btn에 기본 너비를 주지 않으면 hover시 border가 content밖을 둘러싸므로 밑으로 살짝 밀려나게된다. */
+    /* 이때는 border 대신 outline을 주면 해결된다. */
 }
 
 /* about 부분 */
@@ -272,7 +280,8 @@ button:focus{
 }
 
 .skills__coding{
-    grid-row: span 2;
+    /* row가  첫행부터 2행까지 차지 */
+    grid-row: span 2;   
     padding:1.5rem 1rem;
     background-color: var(--color-primary);
 }
@@ -386,10 +395,11 @@ button:focus{
     border-radius: 5px;
     overflow: hidden;
     position: relative;
+    height: 100%;
 }
 .work__link__img{
-    width: 100%
-    
+    width: 100%;
+    height: 100%;
 }
 .work__link__contents{
     position: absolute;
@@ -407,6 +417,8 @@ button:focus{
     transform: translateY(-20px);
 }
 
+
+/* testimonial */
 .testimonials{
     margin: 3rem;
     width: 85%;
@@ -508,18 +520,23 @@ button:focus{
 @media screen and (max-width:768px) {
     /* header */
     .header{
-        flex-direction: column;
+    flex-direction: column;
       align-items: start;
 
     }
     .header__nav{
         width: 100%;
-        padding: 0.7rem 0;
 
     }
     .header__menu{
         flex-direction: column;
         align-items: start;
+        gap: 1rem;
+        padding: 1rem 0rem;
+
+    }
+    .header__menu li{
+        width: 100%;
     }
     .header__bar{
         display: block;
@@ -538,7 +555,7 @@ button:focus{
         font-size: 2rem;
     }
     .description{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     /* home */

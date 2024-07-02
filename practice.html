@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        border: 3px solid gray;
+        margin-bottom: 1rem;
+      }
+    section {
+            /* section 태그에  flex 속성을 주어 section안의 자식 요소들(nav,main,aside) 가로 정렬 */
+            display: flex; 
+            border: 2px solid black;
+            padding: 1rem;
+        }
+      nav,main,aside {
+        border: 2px solid red;
+        margin: 0 1rem;
+      }
+     /* nav,aside에 기본 크기 150px을 주었고 shrink:0으로 주어 화면이 줄어들어도 크기가 작아지지 않는다. */
+      nav,
+      aside {
+        flex-basis: 150px;
+        flex-shrink: 0;
+      }
+      /* main에 grow:1로 주어 화면이 커질때 혼자 크기가 커자고 order을 1로 주어 aside 태그와 순서가 바뀐다. */
+      main{
+        flex-grow: 1;
+        order: 1;
+      }
+      footer {
+       border: 3px solid gray;
+       margin-top: 1rem;
+        text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>혀누tv</h1>
+      </header>
+
+      <section class="content">
+        <nav>
+          <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>js</li>
+          </ul>
+        </nav>
+        <main>천재!</main>
+        <aside>AD</aside>
+      </section>
+
+      <footer>
+        <a href="fefefe.com">홈페이지</a>
+      </footer>
+    </div>
+  </body>
+</html>
