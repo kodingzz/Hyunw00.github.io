@@ -477,6 +477,8 @@ button:focus{
     line-height: 60px;
     box-shadow: var(--color-accent) 0px 20px 30px -10px;
     animation: upanddown 0.3s infinite ease alternate;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 @keyframes upanddown {
