@@ -28,6 +28,8 @@
      <!-- JS 문서 연결 -->
     <script type="module" src="/src/main.js" defer></script> 
     <script type="module" src="/src/projects.js" defer></script>
+    <script type="module" src="/src/active_menu.js" defer></script>
+
     <!-- defer의 역할은 js파일이 html문서가 분석된다음 다운로드 받아서 실행되게 한다. -->
 </head>
 
@@ -43,12 +45,12 @@
         <nav class="header__nav ">
             <ul class="header__menu">
                 <!--id가 home인곳으로 이동 anchor 태그는 단순히 웹사이트를 연결하는 것 뿐 아니라 같은 페이지의 요소로도 이동한다.-->
-                <li><a class="header__menu__item" href="#home">Home</a></li>  
-                <li><a class="header__menu__item" href="#about">About</a></li>
-                <li><a class="header__menu__item" href="#skills">Skills</a></li>
-                <li><a class="header__menu__item" href="#mywork">My work</a></li>
-                <li><a class="header__menu__item" href="#testimonial">Testimonial</a></li>
-                <li><a class="header__menu__item" href="#contact">Contact</a></li>
+                <li><a class="header__menu__item " href="#home" data-address="home">Home</a></li>  
+                <li><a class="header__menu__item" href="#about" data-address="about">About</a></li>
+                <li><a class="header__menu__item" href="#skills"  data-address="skills">Skills</a></li>
+                <li><a class="header__menu__item" href="#mywork" data-address="mywork">My work</a></li>
+                <li><a class="header__menu__item" href="#testimonial" data-address="testimonial">Testimonial</a></li>
+                <li><a class="header__menu__item" href="#contact"  data-address="contact">Contact</a></li>
             </ul>
          
 
@@ -340,7 +342,7 @@
         <!-- arrow up -->
         <aside>
 <!-- a태그안에 의미있는 정보(읽을 수 있는 컨텐츠)가 없을 때 웹 접근성 향상을 위해 title값을 주어 의미를 부여해 주는것이 좋다.-->
-          <a  title="back-to-top" class="arrowup " >
+          <a  title="back-to-top" class="arrowup"  href="#home">
             <i class="fa-solid fa-arrow-up arrowup__icon"></i>
         </a>
          

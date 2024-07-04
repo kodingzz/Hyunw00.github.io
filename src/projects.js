@@ -50,3 +50,5 @@ function handleActiveSelection(target){
     active.classList.remove('mywork__item--selected');
    target.classList.add('mywork__item--selected');
 }
+
+

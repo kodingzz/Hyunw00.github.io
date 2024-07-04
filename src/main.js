@@ -60,9 +60,7 @@ function showArrowBtn(){
     }
 }
 
-arrowUp.addEventListener('click',()=>{
-    window.scrollTo({top:0,behavior:"smooth"});
-})
+
 
 headerBar.addEventListener('click',()=>{
     headerMenu.classList.toggle('open');
@@ -77,5 +75,19 @@ headerMenu.addEventListener('click',(e)=>{
 
 })
 
-//  모바일 환경에서는 클릭할 수있는 범위를 넓혀주는 것이 좋다.
+//  모바일 환경에서는 클릭할 수있는 범위를 넓혀주는 것이 좋다!!
 
+
+
+
+const menus = document.querySelectorAll('.header__menu__item');
+const sections =document.querySelectorAll('.section');
+menus.forEach(menu=>{
+
+    menu.addEventListener('click',()=>{
+       console.log(menu.dataset.address);
+    const goal=[...sections].filter(section=>section.id===menu.dataset.address)[0];
+    goal.scrollIntoView({behavior:"smooth"});
+    })
+
+})
