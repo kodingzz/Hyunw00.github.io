@@ -2,21 +2,47 @@
      /* App colors */
     --color-primary :var(--color-black);
     --color-primary-variant: var(--color-gray);
-    --color-accent: var(--color-blue);
+    --color-accent: var(--color-yellow);
     --color-accent-variant:var(--color-orange);
     --color-text: var(--color-white);
+
+
+    /* background colors */
+    --home-bg-gradient :linear-gradient(180deg, rgba(46,16,9,1) 0%, rgba(79,171,31,1) 100%);
+    --home-bg-svg:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg fill-opacity='0.19'%3E%3Crect fill='%23011203' width='11' height='11'/%3E%3Crect fill='%23051607' x='10' width='11' height='11'/%3E%3Crect fill='%2309190a' y='10' width='11' height='11'/%3E%3Crect fill='%230c1c0e' x='20' width='11' height='11'/%3E%3Crect fill='%230f1f10' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23112212' y='20' width='11' height='11'/%3E%3Crect fill='%23132514' x='30' width='11' height='11'/%3E%3Crect fill='%23142816' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23162c18' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23192f1a' y='30' width='11' height='11'/%3E%3Crect fill='%231b321b' x='40' width='11' height='11'/%3E%3Crect fill='%231d361d' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%231f391f' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23213d21' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23244022' y='40' width='11' height='11'/%3E%3Crect fill='%23264424' x='50' width='11' height='11'/%3E%3Crect fill='%23294726' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%232b4b27' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%232e4e29' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%2330522b' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%2333552c' y='50' width='11' height='11'/%3E%3Crect fill='%2336592e' x='60' width='11' height='11'/%3E%3Crect fill='%23385d30' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%233b6131' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%233e6433' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23416834' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23446c36' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23476f37' x='70' width='11' height='11'/%3E%3Crect fill='%234a7339' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%234e773a' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23517b3c' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23547f3d' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%2358833f' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%235b8640' x='80' width='11' height='11'/%3E%3Crect fill='%235e8a42' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23628e43' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23669245' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23699646' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%236d9a47' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23719e49' x='90' width='11' height='11'/%3E%3Crect fill='%2374a24a' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%2378a64b' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%237caa4d' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%2380ae4e' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%2384b24f' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%2388b651' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%238cba52' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%2391be53' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%2395c254' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%2399c655' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%239dca57' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23a2ce58' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23a6d259' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23abd65a' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23afda5b' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23b4de5d' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23b9e25e' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23bde65f' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23c2ea60' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23C7EE61' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+    --home-bg-svg2: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='627' height='627' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23132F1A' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23133604'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
 
     /* colors */
     --color-white:#ffffff;
     --color-black:#050a13;
     --color-blue:#03e8f9;
     --color-orange:#fd6413;
-    --color-gray:#1b1e26;
+    --color-gray:#090a0c;
+    --color-green: #48991C;
+    --color-yellow: #DDD000;
+    --color-red: #BF0005;
+
 
     /* max-width */ 
     --max-width :1200px;
-}
 
+    /* shape divider app에서 사용할 디자인의 html,css 코드를 단순 복붙하는것은 재사용성과 코드를 알아보기에 좋지 않다. */
+    /* Divider */ 
+    --divider-single-wave : url('data:image/svg+xml;utf8,  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"> <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" ></path> </svg>');
+    --divider-single-curve: url('data:image/svg+xml;utf8, <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"> <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z"></path> </svg> ');
+    --divider-wave-opacity : url('data:image/svg+xml;utf8,  <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"> <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path> <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5"></path> <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path> </svg>');
+    --divider-single-book: url('data:image/svg+xml;utf8,   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"> <path d="M602.45,3.86h0S572.9,116.24,281.94,120H923C632,116.24,602.45,3.86,602.45,3.86Z"></path> </svg>');
+   
+
+
+}
+/*
+사용한 디자인적 요소들
+1. gradient
+2. shape divider
+3. svg를 이용한 background image 변경
+4. typeit -> 타이핑하는 디자인 효과
+*/
 
 *{
     box-sizing: border-box;
@@ -53,9 +79,6 @@ button{
     outline: 0;
 }
 
-button:focus{
-    outline: 1px solid transparent;
-}
 
 /* Common styling */
  /*section마다 공통된 특징들을 가진다면 각 section마다 특징을 반복해서 부여하기 보다 */
@@ -70,7 +93,7 @@ button:focus{
     margin: 1rem 0;
 }
 .description{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: 0.5rem 0;
 }
 
@@ -89,7 +112,6 @@ button:focus{
     justify-content: space-between;
     align-items: center;
     padding:10px;
-    /* background-color: var(--color-black); */
     background-color: transparent;
     position: fixed;
     top: 0;
@@ -107,16 +129,17 @@ button:focus{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex item간에 gap주기 */
-    gap: 5px;
+    gap: 8px;
+    transition: color 0.5s ease-in;
+}
+.header__logo__a:hover{
+   color:var(--color-accent);
 }
 .header__logo__title{
     font-size: 1.2rem;
     margin-top:5px;
 }
-.header__logo__img{
-  
-}
+
 .header__menu{
     display: flex;
     justify-content: center;
@@ -150,15 +173,38 @@ button:focus{
 
 /* home 부분 */
 #home{
+    
+    position: relative;  /*home divider의 position이 absolute이므로  */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(36,0,15);
-    background: linear-gradient(90deg, rgba(36,0,15,1) 0%, rgba(94,6,21,1) 0%, rgba(117,12,12,1) 0%, rgba(167,114,7,1) 24%, rgba(202,235,0,1) 44%, rgba(7,170,9,1) 66%, rgba(43,11,150,1) 84%, rgba(121,9,120,1) 100%, rgba(27,167,225,1) 100%, rgba(0,212,255,1) 100%, rgba(0,0,0,1) 100%, rgba(17,119,10,1) 100%, rgba(17,117,12,1) 100%, rgba(17,117,12,1) 100%);
 
+    background-color: var(--color-primary);
+    background-image: var(--home-bg-svg);   
+    background-attachment: fixed;
+    background-size: cover;
+    
     color: var(--color-text);
 }
+
+/* home부분 shape */
+#home::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+
+    width: 100%;
+    height: 70px;
+    background-color: var(--color-white);
+    mask:var(--divider-single-wave);
+    -webkit-mask: var(--divider-single-wave);
+}
+
 
 .home__img{
     width: 200px;
@@ -209,8 +255,15 @@ button:focus{
     justify-content: center;
     align-items: center;
     gap: 15px;
-
+    position: relative;
   
+}
+
+
+.about__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about__info{
@@ -254,7 +307,7 @@ button:focus{
 
 .about__careers{
   
-   text-align: start;
+   text-align: left;
    
 }
 .about__career{
@@ -279,9 +332,27 @@ button:focus{
 }
 /* skills */
 #skills{
+    position: relative;
     background-color:var(--color-primary-variant);
+    background: var(--home-bg-gradient);
     color: var(--color-text);
 }
+#skills::after{
+    content: '';
+    position: absolute;
+    /* bottom: 0; */
+    left: 0;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+
+    width: 100%;
+    height: 84px;
+    background-color: var(--color-primary);
+    mask: var(--divider-wave-opacity);
+    -webkit-mask: var(--divider-wave-opacity);
+}
+
 
 .skills{
     display: grid;
@@ -369,6 +440,7 @@ button:focus{
     text-align: center;
     position: relative;
     white-space: nowrap;
+    transition: all 0.3s ease-in-out;
 }
 
 .mywork__item--selected{
@@ -408,7 +480,7 @@ button:focus{
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
     grid-gap: 1rem;
-    transition: all 0.4s ease-in;
+    transition: all 0.3s ease-in;
 }
 .works.anim-out{
     opacity: 0;
@@ -434,7 +506,7 @@ button:focus{
     height: 100%;
     opacity: 0.8;
     background-color: var(--color-black);
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 .work__link__contents:hover{
@@ -518,10 +590,31 @@ button:focus{
 /* footer */
 
 #contact{
+    position: relative;
     background-color: var(--color-primary-variant);
     color: var(--color-text);
+    /* background: var(--home-bg-gradient); */
+    background-image: var(--home-bg-svg2);
 
 }
+
+#contact::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+
+    width: 100%;
+    height: 64px;
+    background-color: var(--color-white);
+    mask: var(--divider-single-book);
+    -webkit-mask:var(--divider-single-book);
+} 
+
+
 
 .contacts{
     display: flex;
@@ -538,10 +631,7 @@ button:focus{
     color: var(--color-accent);
 }
 
-.c{
 
-    font-size: 12px;
-}
 
 /* 반응형 웹 */
 @media screen and (max-width:740px) {
@@ -558,12 +648,12 @@ button:focus{
         display: none;
         flex-direction: column;
         align-items: center;
-        gap: 1.4rem;
+        gap: 1.4rem; 
         padding: 1.5rem;
         width: 100%;
     }
     .header__menu.open{
-        display:    flex;
+        display: flex;
     }
     .header__menu li{
         width: 100%;

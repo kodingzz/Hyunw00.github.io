@@ -12,9 +12,21 @@ const headerHeight =header.getBoundingClientRect().height;
 // const headerHeight =header.offsetHeight;   -> 정수반환(소수점 제거) 
 
 const home =document.querySelector('#home');
-const homeImg =document.querySelector('.home__img');
-const homeInfo = document.querySelector('.home__info');
+const homeConatiner= document.querySelector('.home__container');
 const homeHeight =home.offsetHeight;
+
+const about =document.querySelector('#about');
+const aboutConatiner= document.querySelector('.about__container');
+const aboutHeight =about.offsetHeight;
+
+const skills =document.querySelector('#skills');
+const skillsConatiner= document.querySelector('.skills__container');
+const skillsHeight =skills.offsetHeight;
+
+const mywork =document.querySelector('#mywork');
+const myworkConatiner= document.querySelector('.mywork__container');
+const myworkHeight =mywork.offsetHeight;
+
 
 const arrowUp = document.querySelector('.arrowup');
 
@@ -22,10 +34,18 @@ const headerMenu =document.querySelector('.header__menu');
 const headerBar =document.querySelector('.header__bar');
 
 
+
 document.addEventListener('scroll',()=>{
     headerDarker();
-    homeBlurred();
+    Blurred(homeConatiner,home,homeHeight);
+    Blurred(aboutConatiner,about,aboutHeight);
+    Blurred(skillsConatiner,skills,skillsHeight);
+    Blurred(myworkConatiner,mywork,myworkHeight);
+
+
+
     showArrowBtn(); 
+  
 }   
 )
 
@@ -39,11 +59,11 @@ function headerDarker(){
         }
 }
 
-function homeBlurred(){
-    homeImg.style.opacity =1-window.scrollY/homeHeight; 
-    homeInfo.style.opacity =1-window.scrollY/homeHeight; 
-}
+function Blurred(container,section,height){
+    
+    container.style.opacity = 1- (window.scrollY-section.offsetTop)/height; 
 
+}
 
 function showArrowBtn(){
 
@@ -76,18 +96,3 @@ headerMenu.addEventListener('click',(e)=>{
 })
 
 //  모바일 환경에서는 클릭할 수있는 범위를 넓혀주는 것이 좋다!!
-
-
-
-
-const menus = document.querySelectorAll('.header__menu__item');
-const sections =document.querySelectorAll('.section');
-menus.forEach(menu=>{
-
-    menu.addEventListener('click',()=>{
-       console.log(menu.dataset.address);
-    const goal=[...sections].filter(section=>section.id===menu.dataset.address)[0];
-    goal.scrollIntoView({behavior:"smooth"});
-    })
-
-})
